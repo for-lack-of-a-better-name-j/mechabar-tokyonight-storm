@@ -1,0 +1,75 @@
+/* Tokyonight Storm  */
+
+@define-color bg0_h           #24283b;
+@define-color bg0             #1f2335;
+@define-color bg1             #1b1e2d;
+@define-color bg2             #292e42;
+@define-color bg3             #7aa2f7;
+@define-color bg4             #3d59a1;
+@define-color gray            #2ac3de;
+@define-color fg4             #0db9d7;
+@define-color fg3             #89ddff;
+@define-color fg2             #b4f9f8;
+@define-color fg1             #394b70;
+@define-color fg0             #565f89;
+@define-color red             #7dcfff;
+@define-color bright_red      #545c7e;
+@define-color green           #737aa2;
+@define-color bright_green    #c0caf5;
+@define-color yellow          #a9b1d6;
+@define-color bright_yellow   #3b4261;
+@define-color blue            #9ece6a;
+@define-color bright_blue     #73daca;
+@define-color purple          #41a6b5;
+@define-color bright_purple   #bb9af7;
+@define-color aqua            #ff007c;
+@define-color bright_aqua     #ff9e64;
+@define-color orange          #9d7cd8;
+@define-color bright_orange   #f7768e;
+
+@define-color white           #ffffff;
+@define-color black           #000000;
+
+/* 
+  bg - background
+  fg - foreground
+  br - border
+*/
+
+/* Main Colors */
+
+@define-color shadow          shade(@bg0_h, 0.5);
+@define-color main-fg         @gray;/*@fg3;*/
+@define-color main-bg         @bg4;/*@bg4;*/
+@define-color main-br         @fg3;
+
+@define-color active-bg       @yellow;
+@define-color active-fg       @bg0_h;
+
+@define-color hover-bg        @bg2;
+@define-color hover-fg        alpha(@fg0, 0.75);
+
+/* Module Colors */
+
+@define-color module-fg       @fg3;/*@fg3;*/
+@define-color workspaces      @bg0;
+
+@define-color cpuinfo         @bg0;
+@define-color memory          @bg1;
+@define-color cpu             @bg2;
+@define-color distro-fg       @black;
+@define-color distro-bg       @orange;
+@define-color time            @bg2;
+@define-color date            @bg1;
+@define-color tray            @bg0;
+
+@define-color pulseaudio      @bg0;
+@define-color backlight       @bg1;
+@define-color battery         @bg2;
+@define-color power           @yellow;
+
+/* State Colors */
+
+@define-color warning         @bright_orange;
+@define-color critical        @bright_red;
+@define-color charging        @fg0;
