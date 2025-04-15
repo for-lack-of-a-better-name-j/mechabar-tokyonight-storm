@@ -207,7 +207,7 @@
     "return-type": "json",
     "format": "{}",
     "on-click": "~/.config/waybar/scripts/wifi-menu.sh",
-    "on-click-right": "ghostty --title '󰤨  Network Manager TUI' bash -c nmtui",
+    "on-click-right": "ghostty --title='󰤨  Network Manager TUI' -e nmtui",
     "interval": 1,
     "min-length": 1,
     "max-length": 1
@@ -225,7 +225,7 @@
     "tooltip-format-enumerate-connected": "{device_alias}",
     "tooltip-format-enumerate-connected-battery": ":: {device_alias}: 󱊣 {device_battery_percentage}%",
     "on-click": "~/.config/waybar/scripts/bluetooth-menu.sh",
-    "on-click-right": "ghostty --title '󰂯  Bluetooth TUI' bash -c bluetuith",
+    "on-click-right": "ghostty --title='󰂯  Bluetooth TUI' -e bluetuith",
     "interval": 1,
     "min-length": 1,
     "max-length": 1
@@ -237,7 +237,8 @@
     "exec": "~/.config/waybar/scripts/system-update.sh",
     "return-type": "json",
     "format": "{}",
-    "on-click": "hyprctl dispatch exec '~/.config/waybar/scripts/system-update.sh up'",
+    "on-click": "ghostty --title='System Update (yay)' -e yay",
+    /*"on-click": "hyprctl dispatch exec '~/.config/waybar/scripts/system-update.sh up'",*/
     "interval": 30,
     "min-length": 1,
     "max-length": 1 /*
