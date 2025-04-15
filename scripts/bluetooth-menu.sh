@@ -75,7 +75,8 @@ while true; do
     ;;
   *"Scan for devices")
     notify-send "Press '?' to show help." -i "package-installed-outdated"
-    kitty --title '󰂱  Bluetooth TUI' bash -c "bluetuith" # Launch bluetuith
+    #kitty --title '󰂱  Bluetooth TUI' bash -c "bluetuith" # Launch bluetuith
+    ghostty --title "󰂱  Bluetooth TUI" -e "bluetuith"
     ;;
   *)
     # Extract device name
